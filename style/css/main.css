@@ -1,0 +1,369 @@
+@font-face {
+  font-family: popb;
+  src: url("../font/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: pop;
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+/* GLOBAL CODE  */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: pop;
+}
+
+.sosactive {
+  height: 190px !important;
+}
+
+.sosiactive {
+  display: flex !important;
+  height: 30px !important;
+  visibility: visible !important;
+}
+
+.top {
+  margin-top: 0 !important;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+/* GLOBAL CODE  */
+
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #CC95C0, #DBD4B4);
+}
+
+.maincard {
+  z-index: 10;
+  width: 200px;
+  height: 160px;
+  /* height: 300px; */
+  padding-bottom: 0.7em;
+  position: relative;
+  transition-duration: 1.3s;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 0px 8px rgba(154, 154, 154, 0.36);
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+
+}
+
+.maincard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  position: absolute;
+  top: -30px;
+  box-shadow: 2px 2px 8px rgba(154, 154, 154, 0.6);
+}
+
+.text {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 15px;
+  font-family: popb;
+}
+
+.text h1 span {
+  font-size: 8px;
+  text-transform: uppercase;
+  color: rgba(54, 53, 53, 1);
+}
+
+.status {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.status #text {
+  font-size: 10px;
+  color: rgba(115, 110, 114, 1);
+}
+
+.status #text span {
+  color: rgba(163, 61, 130, 1);
+  margin-right: 5px;
+}
+
+.mainbutton {
+  display: flex;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  gap: 5px;
+}
+
+.mainbutton button {
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: none;
+  background: rgba(253, 131, 214, 1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.mainbutton button:nth-child(1) {
+  border: none;
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+}
+
+.mainbutton button:nth-child(1):active {
+  background: rgba(203, 203, 203, 1);
+}
+
+.mainbutton button:nth-child(2):hover {
+  background: rgba(186, 89, 155, 1);
+}
+
+.sosial {
+  display: flex;
+  visibility: hidden;
+  overflow: hidden;
+  height: 1px;
+  justify-content: space-evenly;
+  margin-top: 8px;
+  transition-duration: 1s;
+}
+
+.sosial button {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+.sosial button:active {
+  color: rgba(253, 131, 214, 1);
+}
+
+.circle:nth-child(2) {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to top, #ACB6E5, #86FDE8);
+  left: 0;
+  bottom: 50%;
+  border-radius: 50%;
+}
+
+.circle:nth-child(3) {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #F469A9;
+  right: 0;
+  bottom: 30%;
+  border-radius: 50%;
+}
+
+.circle:nth-child(4) {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 40%;
+  background: #BA53DE;
+  bottom: 20%;
+  border-radius: 50%;
+}
+
+.sosialwindow {
+  margin-top: -220em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transform: translateY(40%); */
+  z-index: 30;
+  width: 290px;
+  height: 450px;
+  background: #fff;
+  border-radius: 15px;
+  position: absolute;
+  transition-duration: 1s;
+  /* overflow: hidden; */
+  border: 1px solid rgba(101, 102, 112, 0.58);
+  box-shadow: 0px 0px 8px rgba(154, 154, 154, 0.36);
+  text-align: center;
+}
+
+.sosialwindow img {
+  border-radius: 15px;
+  margin: 2em;
+  width: 70%;
+  border: 1px solid rgba(101, 102, 112, 0.58);
+}
+
+.sosialwindow textarea {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 70px;
+  padding: 5px;
+  border: 1px solid rgba(101, 102, 112, 0.58);
+}
+
+.sosialwindow .windowbutton {
+  display: flex;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  gap: 5px
+}
+
+.sosialwindow .windowbutton button {
+  width: 50%;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sosialwindow .windowbutton button:nth-child(1) {
+  background: rgba(253, 131, 214, 1);
+  border: none;
+  border-radius: 5px;
+}
+
+.sosialwindow .windowbutton button:nth-child(1):hover {
+  background: rgba(186, 89, 155, 1);
+}
+
+.sosialwindow .windowbutton button:nth-child(2):hover {
+  background: rgba(203, 203, 203, 1);
+}
+
+.sosialwindow .close {
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 2px 6px;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .circle:nth-child(2) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to top, #ACB6E5, #86FDE8);
+    left: 30%;
+    bottom: 50%;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(3) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #F469A9;
+    right: 30%;
+    bottom: 40%;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(4) {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 40%;
+    background: #BA53DE;
+    bottom: 40%;
+    border-radius: 50%;
+  }
+
+}
+@media only screen and (min-width: 768px) {
+  .circle:nth-child(2) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to top, #ACB6E5, #86FDE8);
+    left: 25%;
+    bottom: 50%;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(3) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #F469A9;
+    right: 20%;
+    bottom: 40%;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(4) {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 40%;
+    background: #BA53DE;
+    bottom: 30%;
+    border-radius: 50%;
+  }
+
+}
+@media only screen and (min-width: 1024px) {
+  .circle:nth-child(2) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to top, #ACB6E5, #86FDE8);
+    left: 35%;
+    bottom: 50%;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(3) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #F469A9;
+    right: 30%;
+    bottom: 40%;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(4) {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 40%;
+    background: #BA53DE;
+    bottom: 30%;
+    border-radius: 50%;
+  }
+
+}
