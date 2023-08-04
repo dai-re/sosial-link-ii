@@ -63,7 +63,7 @@ fbb.onclick = function() {
 fbs.onclick = function() {
   navigator.share({
     text: "dai's sosial",
-    url: "https://facebook.com/deiterada"
+    url: "https://facebook.com/daire.it"
   })
 }
 
